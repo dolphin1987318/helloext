@@ -19,7 +19,7 @@ Ext.application({
 
 
 Ext.application({
-    requires: ['Ext.container.Viewport'],
+    //requires: ['Ext.container.Viewport'],
     name: 'AM',
 
     appFolder: 'app',
