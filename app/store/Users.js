@@ -7,7 +7,7 @@ Ext.define('AM.store.Users', {
         type: 'ajax',
         api: {
             read: 'data/users.json',
-            update: 'data/updateUsers.json'
+            update: 'data/update_callback.php'
         },
         reader: {           //The reader is responsible for decoding the server response into a format the Store can understand.
             type: 'json',

@@ -23,18 +23,16 @@ Ext.define('AM.controller.Users', {
     },
 
     editUser: function(grid, record) {
-        var view = Ext.widget('useredit');  //equals to  Ext.create('widget.useredit')
-
+        var view = Ext.widget('useredit');      //equals to  Ext.create('widget.useredit')
         view.down('form').loadRecord(record);   //down function: accepts a ComponentQuery selector to quickly find any child component
     },
 
     updateUser: function(button) {
         //console.log('clicked the Save button - id: ' + button.id);
         var win    = button.up('window'),
-            form   = win.down('form'),
-            record = form.getRecord(),
-            values = form.getValues();
-
+        form   = win.down('form'),
+        record = form.getRecord(),
+        values = form.getValues();
         record.set(values);
         win.close();
         // synchronize the store after editing the record
